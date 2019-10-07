@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(String[])
+comment1.target=ArrTokenTest()
+comment2.params=event
+comment2.target=void\ actionPerformed(ActionEvent)
+comment3.params=sa
+comment3.target=LinkedList<String>\ mkList(String[])
+comment4.params=sa
+comment4.target=void\ print(String[])
+numComments=5

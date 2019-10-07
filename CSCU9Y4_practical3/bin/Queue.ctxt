@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Queue()
+comment0.text=\r\n\ Construct\ a\ new\ queue.\ This\ should\ initialise\ the\ empty\ queue.\r\n
+comment1.params=
+comment1.target=int\ howMany()
+comment1.text=\r\n\ Gets\ the\ number\ of\ elements\ in\ the\ queue.\r\n\ \r\n\ @return\ the\ number\ of\ elements\ in\ the\ queue.\r\n
+comment2.params=k
+comment2.target=void\ enqueue(java.lang.Object)
+comment2.text=\r\n\ Add\ a\ new\ element\ to\ the\ end\ of\ the\ queue.\r\n\r\n\ @param\ o\ the\ object\ to\ enqueue.\r\n
+comment3.params=
+comment3.target=java.lang.Object\ dequeue()
+comment3.text=\r\n\ Get\ the\ next\ element\ from\ the\ front\ of\ the\ queue.\r\n\r\n\ @return\ the\ next\ element\ in\ the\ queue.\r\n
+numComments=4

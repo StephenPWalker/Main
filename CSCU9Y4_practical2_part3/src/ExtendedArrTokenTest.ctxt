@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=
+comment1.target=ExtendedArrTokenTest()
+comment2.params=event
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment3.params=sa
+comment3.target=void\ removeEveryOtherToken(java.util.List)
+comment4.params=sa
+comment4.target=java.util.List\ mkList(java.lang.String[])
+comment5.params=sa\ s
+comment5.target=void\ printItList(java.util.List,\ java.lang.String)
+comment6.params=sa
+comment6.target=void\ print(java.lang.String[])
+numComments=7

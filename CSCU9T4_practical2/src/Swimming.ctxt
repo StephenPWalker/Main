@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=n\ d\ m\ y\ h\ min\ s\ dist\ isIndoors
+comment0.target=Swimming(java.lang.String,\ int,\ int,\ int,\ int,\ int,\ int,\ float,\ boolean)
+comment1.params=
+comment1.target=boolean\ getIsIndoors()
+comment2.params=
+comment2.target=java.lang.String\ getWasItIndoors()
+comment3.params=
+comment3.target=java.lang.String\ getEntry()
+numComments=4

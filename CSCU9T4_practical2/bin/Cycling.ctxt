@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=n\ d\ m\ y\ h\ min\ s\ dist\ terrain\ tempo
+comment0.target=Cycling(java.lang.String,\ int,\ int,\ int,\ int,\ int,\ int,\ float,\ java.lang.String,\ int)
+comment1.params=
+comment1.target=java.lang.String\ getTerrain()
+comment2.params=
+comment2.target=int\ getTempo()
+comment3.params=
+comment3.target=java.lang.String\ getEntry()
+numComments=4

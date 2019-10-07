@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=n\ d\ m\ y\ h\ min\ s\ dist\ recoveryMins\ howManyRuns
+comment0.target=Sprinting(java.lang.String,\ int,\ int,\ int,\ int,\ int,\ int,\ float,\ int,\ int)
+comment1.params=
+comment1.target=int\ getRecoveryMins()
+comment2.params=
+comment2.target=int\ getHowManyRuns()
+comment3.params=
+comment3.target=java.lang.String\ getEntry()
+numComments=4

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='persons.xsl' ?>
+	<people>
+		<person>
+			<first_name>John</first_name>
+			<surname>Smith</surname>
+			<age>29</age>
+			<town>Stirling</town>
+		</person>
+		<person>
+			<first_name>Sarah</first_name>
+			<surname>Brown</surname>
+			<age>33</age>
+			<town>Falkirk</town>
+		</person>
+		<person>
+			<name>Eric Pickles</name>
+			<date_of_birth>01/02/78</date_of_birth>
+			<passport_number>45687321</passport_number>
+			<shoe_size>10.5</shoe_size>
+			<hamster>
+				<name>Freddie the Hamster</name>
+			</hamster>
+		</person>
+		<person>
+			<name>Margot Black</name>
+			<date_of_birth>04/11/89</date_of_birth>
+			<shoe_size>6</shoe_size>
+		</person>
+	</people>

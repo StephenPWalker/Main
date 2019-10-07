@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My Multimedia Examples</title>
+
+<script src="jquery.js"></script>
+
+<script>
+function clickBtn( btn )
+{
+  var bname = "#scene" + btn;
+  $("[id^='scene']").hide();
+  $(bname).show();
+}
+
+$(document).ready(function(){
+  clickBtn('0');
+});
+
+var slideIndex = 1;
+function nextSlide()
+{
+
+}
+</script>
+
+<style>
+div.stage { position: absolute; top: 20px; left: 20px; width: 640px; height: 400px;
+	background-color: Black; }
+
+div.menu { position: absolute; top: 5px; left: 5px;
+	width: 115px; height: 380px; background-color: CadetBlue;
+	color: white; padding: 5px; }
+
+div.content { position: absolute; top: 5px; left: 135px;
+	width: 490px; height: 380px;
+	background-color: Azure; padding: 5px; }
+
+button.block { display: block; padding: 5px; margin: 5px; width: 105px; }
+
+h1.welcome {font-family: Verdana, sans-serif; color: darkred;
+    text-align: center; text-shadow: 2px 2px lightgrey; transition: 3s;}
+
+h1.welcome:hover { transform: rotateX(360deg); color: orange;}
+
+h2.slideShow {font-family: Verdana, sans-serif; color: darkred;}
+
+p.largeBlue {font-family: Verdana, sans-serif; font-size: 24px; color: blue;
+text-align: center;}
+
+p.smallGreen {font-family: Verdana, sans-serif; font-size: 18px; color: green;
+text-align: center;}
+
+#bullet { background-color: silver;
+          width: 40px; height: 20px;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          position: absolute;
+          left: 120px;
+          top: 200px;
+          }
+
+</style>
+</head>
+
+<body>
+
+<div id="stage" class="stage">
+
+<div id="menu1" class="menu">
+<button id="btnHome" type="button" onclick="clickBtn('0')" class="block">Home</button>
+<button id="btnSS" type="button" onclick="clickBtn('1')" class="block">SlideShow</button>
+</div>
+
+<!-- Intro screen (scene0) HOME -->
+<div id="scene0" class="content">
+<h1 class="welcome">WELCOME!</h1>
+<p class ="largeBlue">
+This is my test multimedia site, built using HTML5, Cascading Style Sheets (CSS) and JavaScript.
+</p>
+<p class = "smallGreen">
+Author: Stephen Phillip Walker, September 2019.
+</p>
+</div>
+
+<!-- 2nd screen (scene1) SLIDESHOW -->
+<div id="scene1" class="content">
+<h2 class="slideShow">Slide show...</h2>
+<p class = "smallGreen">
+<div id="container">
+
+<div class="imagec" id="slide1">
+<img src="Media/image1.jpg" width=288 height=209 alt="Image 1">
+</div>
+<!--
+<div class="imagec" id="slide2">
+<img src="Media/image2.jpg" width=288 height=209 alt="Image 2">
+</div>
+<div class="imagec" id="slide3">
+<img src="Media/image3.jpg" width=288 height=209 alt="Image 3">
+</div>
+-->
+
+</div>
+</p>
+<button id="nextSlide" type="button" onclick="nextSlide()" class="block">Next</button>
+</div>
+
+</div>
+
+</body>
+</html>

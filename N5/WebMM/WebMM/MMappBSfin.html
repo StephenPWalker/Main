@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<title>My Bootstrap MM Examples</title>
+
+<script>
+function clickBtn( btn )
+{
+  var bname = "#scene" + btn;
+  $("[id^='scene']").hide();
+  $(bname).show();
+}
+
+$(document).ready(function(){
+});
+</script>
+
+<style>
+
+button.block { display: block; padding: 5px; margin: 5px; width: 105px; }
+
+h1.welcome {font-family: Verdana, sans-serif; color: darkred;
+    text-align: center; text-shadow: 2px 2px lightgrey; }
+
+#bullet { background-color: silver;
+          width: 40px; height: 20px;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          position: absolute;
+          left: 120px;
+          top: 200px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!--
+<div id="stage" class="stage">
+
+<div id="menu1" class="menu">
+<button id="btnHome" type="button" onclick="clickBtn('0')" class="block">Home</button>
+</div>
+-->
+
+<div class="jumbotron text-center">
+<h1 class="welcome">WELCOME!</h1>
+<p>
+This is my test multimedia site, built using HTML5, Cascading Style Sheets (CSS), JavaScript and Bootstrap 4.
+</p>
+<p>
+Author: What is my name?
+</p>
+</div>
+
+<div class="container">
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#scene0">Home</button>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#scene1">Slides</button>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#scene2">Video</button>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#scene3">Canvas</button>
+</div>
+
+<div id="stage" class="container" style="margin-top:30px">
+
+<!-- Intro screen (scene0) -->
+<div id="scene0" class="collapse" data-parent="#stage">
+<h2>Hello...</h2>
+<p>
+This is my test multimedia site.
+</p>
+<p>
+Author: What is my name?
+</p>
+</div>
+
+
+<!-- Scene1 -->
+<div id="scene1" class="collapse" data-parent="#stage" style="position: static;">
+<h2>Slide show...</h2>
+
+<div id="slides" class="carousel slide" data-ride="carousel" style="position: absolute;">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#slides" data-slide-to="0" class="active"></li>
+    <li data-target="#slides" data-slide-to="1"></li>
+    <li data-target="#slides" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Media/image1.jpg" width=288 height=209 alt="Slide 1">
+    </div>
+    <div class="carousel-item">
+      <img src="Media/image2.jpg" width=288 height=209 alt="Slide 2">
+    </div>
+    <div class="carousel-item">
+      <img src="Media/image3.jpg" width=288 height=209 alt="Slide 3">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#slides" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#slides" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+</div>
+
+
+<!-- Scene2 -->
+<div id="scene2" class="collapse" data-parent="#stage">
+<h2>A Video...</h2>
+<p>
+<video id="vid" width="423" height="240" src="Media/LMFAO.mp4" controls></video>
+</p>
+<button onclick="document.getElementById('vid').play();">Play</button>
+<button onclick="document.getElementById('vid').pause();">Pause</button>
+<button onclick="document.getElementById('vid').load();">Rewind</button>
+</div>
+
+
+<!-- Scene3 -->
+<div id="scene3" class="collapse" data-parent="#stage">
+<h2>Canvas Graphics...</h2>
+
+<canvas id="myCanvas" width="400" height="280"
+style="border:3px solid black;">
+</canvas>
+</div>
+
+ <script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "blue";
+ctx.fillRect(0,0,400,280);
+ctx.strokeStyle = "white";
+ctx.lineWidth = 20;
+ctx.moveTo(0, 0);
+ctx.lineTo(400, 280);
+ctx.stroke();
+ctx.moveTo(0, 280);
+ctx.lineTo(400, 0);
+ctx.stroke();
+ctx.font = "italic 40px Calibri";
+ctx.fillStyle = "yellow";
+ctx.fillText("Scotland!", 120, 40);
+</script>
+
+</div>
+
+</body>
+</html>
